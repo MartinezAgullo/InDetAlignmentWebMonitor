@@ -1,0 +1,12 @@
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data18_13TeV/express_express, ONLINE
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data18_13TeV/calibration_IDTracks, ONLINE
+path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data18_13TeV/express_express, ONLINE
+path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data18_13TeV/calibration_IDTracks, ONLINE
+
+# reprocessing
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/Reprocessing/data18_13TeV/calibration_IDTracks, REPRO
+
+# online backup
+/eos/atlas/atlastier0/rucio/data18_13TeV/express_express, ONLINE_BACKUP
+/eos/atlas/atlastier0/rucio/data18_13TeV/calibration_IDTracks, ONLINE_BACKUP
+

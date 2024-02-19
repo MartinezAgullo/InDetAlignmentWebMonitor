@@ -1,0 +1,7 @@
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data17_13TeV/express_express, ONLINE
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data17_13TeV/calibration_IDTracks, ONLINE
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data17_5TeV/calibration_IDTracks, ONLINE")
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data17_5TeV/express_express, ONLINE")
+
+# reprocessing
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/Reprocessing/data17_13TeV/calibration_IDTracks, REPRO

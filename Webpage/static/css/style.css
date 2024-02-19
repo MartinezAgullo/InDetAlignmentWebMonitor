@@ -1,0 +1,985 @@
+@charset "utf-8";
+@import "tablesorter.css";
+html{height:100%;padding:0;}
+
+/*  Skeleton - body */
+body{					
+    /* background: #0b80c3; */
+    background: #276ca3;
+    width:80%;
+    height:100%;
+    font: 90% Verdana, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding:0;
+    margin-top: 25px; 
+}
+
+/* The formulary for searchig for runs */
+form{
+	margin-top:0;
+	padding:0%;
+}
+
+label{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 11px;
+	color: #000000;
+	/*display:block;*/
+	margin:1em 0 0;
+}
+
+/*_______________________*/
+
+
+.campo{
+	display:inline;
+	margin-bottom:20px;
+}
+
+
+/* The HEADER, where the "ID Alignment" title is */
+header{
+	background-color: #0b80c3;
+	height:15%;
+	min-height:85px;
+	min-width:600px;
+	margin-top:10px;
+	margin-bottom:0;
+	padding:5px;
+}
+
+#logo{
+	float:left;
+	height:90px;
+}
+
+/* #header ul{
+	text-align:center;
+	margin:0 auto;
+} */
+
+/* #header li{ 
+	display:inline;
+	padding:20px;
+} */
+
+#header h1{
+	text-align:center;
+	margin-top:0;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	color:#000;	
+	font-size: 60pt;
+	
+}
+#header h3{
+	text-align:center;
+	margin-top:0;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color:#fff;	
+}
+
+#header a:hover{
+	text-decoration:underline;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	color:#000000;
+}
+
+/* Color of non-visited links */
+#header a:link{
+	color:#000;
+	text-decoration: none; /* <-- remove link inline*/
+} 
+
+/* Color of visited links */
+#header a:visited{
+	color:#000;
+	text-decoration: none;
+}
+
+/* Where the logo */
+#brand-box {
+  	position: absolute;
+  	top: 40px;
+  	left: 40px;
+} /* end logo*/
+
+/* title and subtitle*/ 
+.text-box {
+  	position: absolute;
+  	top: 10%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading-primary {
+    /* color: #343a40; */
+    color: #276ca3;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary a{
+    /* color: #343a40; */
+    color: #276ca3;
+}
+
+.heading-primary-main {
+  	display: block;
+  	font-size: 23px;
+  	font-weight: 400;
+  	letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  	display: block;
+  	font-size: 15px;
+  	font-weight: 700;
+  	letter-spacing: 7.4px;
+}
+
+
+/* btn is the button */
+.btn:link,
+.btn:visited {
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	padding: 10px 20px;
+  	display: inline-block;
+  	border-radius: 100px;
+  	transition: all .2s;
+  	position: relative;
+}
+
+.btn:hover {
+  	transform: translateY(-3px);
+  	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  	background-color: #fff;
+  	color: #777;
+	font-size: 12px;
+}
+
+.btn: a{
+	font-color:#000;
+	text-decoration: none;
+}
+
+
+/* ____header______ */
+
+
+
+/* Where the table  is*/
+#wrapper{
+	/*background:#FFF;*/
+	height:78%;
+	min-height:350px;
+	width:100%;
+	min-width:610px;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+#wrapper h2{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color: #000;
+}
+
+#wrapper h3{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 15pt;
+	color: #000;
+}
+
+
+
+/* badges are where the numer of runs and date are*/
+.badge {
+  padding: 1px 9px 2px;
+  white-space: nowrap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-variant: normal;
+  color: #ffffff;
+  background-color: #0b80c3;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.badge: a {
+  color: #fffff;
+  text-decoration: none;
+  /*cursor: pointer;*/
+}
+
+.badgelink a:hover {
+  color: #fff000;
+  text-decoration: none;
+  cursor: pointer;*/
+}
+
+.badgelink:link,
+.badgelink:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* ____badges______*/
+
+
+#searchs{
+	float:right;
+	background:#FFF;
+	width:17%;
+	height:100%;
+	overflow:hidden;
+	margin:0;
+	padding:auto;
+}
+
+/* Background of what is behind the table */
+#content{
+	background:#FFF;
+	float:left;
+	width:83%;
+	height:100%;
+	overflow:scroll;
+}
+	
+#rtt{
+	float:center;
+	background:#FFAA00;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:0;
+	padding:auto;
+}
+
+
+/* Background of the footer where the copyright note is*/
+#footer{
+    background-color:#343a40;
+    /* background-color:#276ca3; */
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 7px 7px;
+    border: 1px solid transparent;
+}
+ #footer p{
+	color: #fff;
+	padding: 10px 0px 0px 0px;
+ 
+ }
+ /*––footer–––––––––*/
+
+
+
+
+
+
+/* Entries */
+
+.entry{
+	background:#fff;
+	height:78%;
+	min-height:350px;
+	width:100%;
+	min-width:610px;
+	text-align:left;
+	padding:20;
+
+
+}
+
+.entry-header{
+	/*no need to define header*/
+	margin-left: 1em;
+	text-align:left;
+	margin-top:30 em;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 20pt;
+}
+
+.entry-title{
+	/*font-weight:bold;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-size: 9 pt;
+	font-variant: normal;*/
+	margin-top:10 em;
+	color:#000;  
+
+}
+
+.entry-content{
+	font-weight:normal;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-size: 15px;
+	font-variant: normal;
+	color:#000;  
+	margin-left: 2em;
+
+}
+/*____Entries__*/
+
+
+
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+ol.carousel-indicators{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  /*background: black; */
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 10px;
+  margin: 1px;
+  border-radius: 10px;
+  border: 0;
+  background: black;
+}
+
+ol.carousel-indicators li.active{
+  background: #0b80c3;
+}
+
+
+
+
+/* Sidebar menu */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top:  0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 12pt;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #fff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*______sidebar______*/
+
+
+
+
+/* Create three equal columns that floats next to each other (tabbed view) */
+.column {
+  /*float: left;
+  width: 33.33%; */
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows (tabbed view) */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements (tabbed view) */
+.show {
+  display: block;
+}
+
+
+
+
+/* TABLES */
+
+/*main talbe*/
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 600px;
+    font-size: 13px;
+}  /* this height is the size of the table*/
+ thead th { position: sticky; top: 0; }
+
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+
+
+
+table tr:nth-of-type(odd) { 
+    background: #f2f2f2; 
+}
+
+
+
+table tr:hover {
+  background-color: #c1d6db; 
+}
+
+
+/* Color of non-visited links */
+table a:link{
+	color:#000064;
+} 
+
+/* Color of visited links */
+table a:visited{
+	color:#640000;
+}
+
+table a:hover{
+	text-decoration:underline;
+	font-style:normal;
+	color:#ffff00;
+}
+
+table{
+	font-size: 11pt;
+}
+
+table th{
+    /* background-color: #343a40; */
+    background-color:#276ca3;
+    color: #fff 
+}
+
+/*_____   TABLES  _____*/
+
+
+div.align_center {
+  text-align: center;
+}
+
+div.align_right {
+  text-align: right;
+}
+
+div.align_left {
+  text-align: left;
+}
+
+
+.clickable{
+		    cursor: pointer;   
+}
+
+/* plot display*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demoSlide {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*  plot display */
+
+
+
+
+
+
+/*Mobile View*/
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 25%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Run"; }
+	td:nth-of-type(2):before { content: "Period"; }
+	td:nth-of-type(3):before { content: "Record date"; }
+	td:nth-of-type(4):before { content: "Project"; }
+	td:nth-of-type(5):before { content: "Stream"; }
+	td:nth-of-type(6):before { content: "Alignment"; }
+	td:nth-of-type(7):before { content: "DB"; }
+	td:nth-of-type(8):before { content: "BS"; }
+}
+
+
+
+
+
+/* LIGHTBOX  */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/62 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.column img {
+  margin-top: 10px; /*space between thumbnail plots*/
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#content_tabe{
+	background:#FFF;
+	width:90%;
+	height:100%;
+}
+
+/*__*/
+/*Button*/
+/*
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+*/
+
+/*
+.button {
+    background: #fff;
+    background-color: #fff;
+    border: none;
+}
+*/
+
+.fa-search {
+    color: #bbb;
+}
+
+input {
+    border: none;
+    font-size: 14px;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    color: #bbb;
+}
+
+/* navbar */
+.navbar{
+        padding: 10px
+	font-size: 11 pt;
+	border-radius: 7px 7px 0px 0px;
+}
+
+.navbar a{
+	color: #fff
+}
+
+.navbar a:hover{
+    color: #bbb;
+}
+
+.nav-item{
+	color: #fff;
+}
+
+/* The container must be positioned relative: */
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  font: 95% Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+/*  Table size changes with browsing window size  */
+@media 
+only screen and (max-width: 760px),
+(max-height: 400px)  {
+.tableFixHead          { overflow-y: auto; height: 150px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 400px) and (max-height: 450px)  {
+.tableFixHead          { overflow-y: auto; height: 200px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 450px) and (max-height: 500px)  {
+.tableFixHead          { overflow-y: auto; height: 250px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 500px) and (max-height: 600px)  {
+.tableFixHead          { overflow-y: auto; height: 400px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 600px) and (max-height: 650px)  {
+.tableFixHead          { overflow-y: auto; height: 450px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 650px) and (max-height: 750px)  {
+.tableFixHead          { overflow-y: auto; height: 500px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 750px) and (max-height: 900px)  {
+.tableFixHead          { overflow-y: auto; height: 550px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 900px) and (max-height: 1200px)  {
+.tableFixHead          { overflow-y: auto; height: 700px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 1200px) and (max-height: 1400px)  {
+.tableFixHead          { overflow-y: auto; height: 800px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 1400px) and (max-height: 1600px)  {
+.tableFixHead          { overflow-y: auto; height: 900px; } 
+}
+@media 
+only screen and (max-width: 760px),
+(min-height: 1600px) {
+.tableFixHead          { overflow-y: auto; height: 1000px; } 
+}

@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import "tablesorter.css";
+html{height:100%;padding:0;}
+
+
+
+
+
+/* Background of the body where the "Contact" link is */
+body{					
+	background:#FF8800;
+	width:99%;
+	height:100%;
+	font:100% Verdana, Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	padding:0;
+}
+
+
+/* Color of non-visited links */
+a:link{
+	color:#000064;
+}
+
+/* Color of visited links */
+a:visited{
+	color:#640000;
+}
+
+a:hover{
+	text-decoration:underline;
+	font-style:normal;
+	color:#FFFE00;
+}
+
+
+
+/* The formulary for searchig for runs */
+form{
+	background:#FFAA00;
+	width:100%;
+	margin-top:0;
+	padding:10%;
+}
+
+label{
+	font-size:14px;
+	color:#FFF;
+	display:block;
+	margin:1em 0 0;
+}
+
+
+
+
+.campo{
+	display:inline;
+	margin-bottom:20px;
+}
+
+
+/* Background of the header where the "ID Alignment" and link is */
+#header{
+	background-color:#FF8800;
+	height:15%;
+	min-height:85px;
+	min-width:600px;
+	margin-top:10px;
+	margin-bottom:0;
+	padding:5px;
+}
+
+#logo{
+	float:left;
+	height:90px;
+}
+
+#header ul{
+	text-align:center;
+	margin:0 auto;
+}
+
+#header li{
+	display:inline;
+	padding:20px;
+}
+
+#header h1{
+	text-align:center;
+	margin-top:0;
+}
+
+#wrapper{
+	background:#FFF;
+	height:78%;
+	min-height:350px;
+	width:100%;
+	min-width:610px;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+#searchs{
+	float:right;
+	background:#FFAA00;
+	width:17%;
+	height:100%;
+	overflow:hidden;
+	margin:0;
+	padding:auto;
+}
+
+/* Background of what is behind the table */
+#content{
+	background:#FFF;
+	float:left;
+	width:83%;
+	height:100%;
+	overflow:scroll;
+}
+	
+#rtt{
+	float:center;
+	background:#FFAA00;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:0;
+	padding:auto;
+}
+
+
+/* Background of the footer where the "Contact" link is */
+#footer{
+	background-color:#FF8800;
+	clear:both;
+	text-align:left;
+	height:2%;
+	min-width:610px;
+	min-height:25px;
+	margin-top:0;
+	margin-bottom:1px;
+}

@@ -1,0 +1,2 @@
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data15_13TeV/calibration_IDTracks, ONLINE
+path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data15_13TeV/calibration_IDTracks, ONLINE

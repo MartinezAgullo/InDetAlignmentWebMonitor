@@ -1,0 +1,91 @@
+
+
+/* NEW STUFF */
+
+/* tables */
+
+
+
+tr:nth-of-type(odd) { 
+    background: #f2f2f2; 
+}
+
+
+
+table tr:hover {
+  background-color: #c1d6db; 
+}
+
+
+/* Color of non-visited links */
+table.tablesorter a:link{
+	color:#000064;
+} 
+
+/* Color of visited links */
+table.tablesorter a:visited{
+	color:#640000;
+}
+
+
+
+table.tablesorter a:hover{
+	text-decoration:underline;
+	font-style:normal;
+	color:#ffff00;
+}
+
+
+
+
+table.tablesorter tbody 
+{
+   overflow: auto;
+   height: 600px;
+}
+
+
+
+
+/* accessibility for mobile */
+/*Mobile View*/
+@media 
+only screen and 
+    (max-width: 760px){
+    td, tr { 
+        display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr {
+        border: 1px solid #0b80c3; 
+    }
+    tr + tr{
+        margin-top: 1.5em;
+    }
+	td { 
+		/* make like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+        background-color: #f2f2f2;
+        text-align: left; 
+	}
+	td:before { 
+        content: attr(data-label);
+        display: inline-block;
+        line-height: 1.5;
+	    margin-left: -100%;
+        width: 100%;
+		white-space: nowrap;
+	}
+}
+
+
+/*  ATLAS STYLE-GUIDELINE COLOR: #0b80c3 */

@@ -1,0 +1,5 @@
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data18_hi/express_express, ONLINE
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data18_hi/calibration_IDTracks, ONLINE
+path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data18_hi/express_express, ONLINE
+path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data18_hi/calibration_IDTracks, ONLINE
+

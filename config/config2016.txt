@@ -1,0 +1,15 @@
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_cos/physics_IDCosmic
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_comm/physics_MinBias
+# SALVA - NOV 2016 - Check only reprocessing files
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_13TeV/calibration_IDTracks, ONLINE
+# SALVA - NOV 2016 - Check only reprocessing files
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_13TeV/problematic_runs, ONLINE
+
+# reprocessing
+# path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0_Repro/data16_13TeV/calibration_IDTracks, REPRO
+# path = /eos/atlas/atlastier0/tzero/caf/IDAlignment/data16_13TeV/calibration_IDTracks, REPRO
+
+# Heavy ions: hi+p
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_hip5TeV/calibration_IDTracks, hip5TeV
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_hip5TeV/express_express, hip5TeV
+path = /afs/cern.ch/user/a/atlidali/w0/calibLoop/Tier0/data16_hip8TeV/calibration_IDTracks, hip8TeV
